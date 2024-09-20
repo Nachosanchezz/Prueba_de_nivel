@@ -1,1 +1,0 @@
-from vehiculo import Vehiculo
