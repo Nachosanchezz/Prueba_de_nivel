@@ -23,12 +23,14 @@ def lanzador_main():
     vehiculo.append(mi_vehiculo4)
     print(mi_vehiculo4)
 
-def catalogar(vehiculos):
-    for vehiculo in vehiculos:
-        print(f"Clase: {vehiculo.__class__.__name__}" )
+    def catalogar(vehiculos):
+        for vehiculo in vehiculos:
+            print(f"Clase: {vehiculo.__class__.__name__}" )
         for atributo, valor in vehiculo.__dict__.items():
             print(f"{atributo}: {valor}")
         print()
+
+    catalogar(vehiculo)
         
 
 
