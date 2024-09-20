@@ -5,4 +5,4 @@ class Camioneta(Coche):
         Coche.__init__(self,color,ruedas,velocidad,cilindrada)
         self.carga=carga
     def __str__(self):
-        return Coche.__str__(self)+" {} kg de carga".format(self.carga)
+        return f'Camioneta(color={self.color},ruedas={self.ruedas},velocidad={self.velocidad},cilindrada={self.cilindrada},carga={self.carga})'
