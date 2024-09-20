@@ -1,6 +1,6 @@
 from subclases.coche import Coche
 
-def Camioneta(Coche):
+class Camioneta(Coche):
     def __init__(self,color,ruedas,velocidad,cilindrada,carga):
         Coche.__init__(self,color,ruedas,velocidad,cilindrada)
         self.carga=carga

@@ -1,6 +1,6 @@
 from subclases.bicicleta import Bicicleta
 
-def Motocicleta(Bicicleta):
+class Motocicleta(Bicicleta):
     def __init__(self,color,ruedas,tipo,velocidad,cilindrada):
         Bicicleta.__init__(self,color,ruedas,tipo)
         self.velocidad=velocidad
