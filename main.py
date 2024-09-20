@@ -10,7 +10,7 @@ if __name__ == "__main__":
     print(mi_vehiculo1)
     mi_vehiculo2 = Bicicleta("Azul", 2,"Deportiva")
     print(mi_vehiculo2)
-    mi_vehiculo3 = Camioneta("Ford", "Fiesta",1000)
+    mi_vehiculo3 = Camioneta("Blanca", 6,120,1000,5000)
     print(mi_vehiculo3)
     mi_vehiculo4 = Motocicleta("Negra", 2,"Yamaha", 220, 1000)
     print(mi_vehiculo4)
