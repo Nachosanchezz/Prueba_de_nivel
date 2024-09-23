@@ -23,15 +23,20 @@ def lanzador_main():
     vehiculo.append(mi_vehiculo4)
     print(mi_vehiculo4)
 
-    def catalogar(vehiculos):
-        for vehiculo in vehiculos:
-            print(f"Clase: {vehiculo.__class__.__name__}" )
-        for atributo, valor in vehiculo.__dict__.items():
-            print(f"{atributo}: {valor}")
-        print()
+    def catalogar(vehiculos, ruedas=None):
+        if ruedas is not None:
+            vehiculos_filtraos = [v for v in vehiculos if v.ruedas == ruedas]
+            print(f"Se han encontrado {len(vehiculos_filtraos)} vehículos con {ruedas} ruedas:")
+            for v in vehiculos_filtraos:
+                print(v)
+        else:
+            for v in vehiculos:
+                print(v)
 
     catalogar(vehiculo)
+    catalogar(vehiculo, 0)
+    catalogar(vehiculo, 2)
+    catalogar(vehiculo, 4)
         
-
 
 
