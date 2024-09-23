@@ -2,7 +2,6 @@ from subclases.coche import Coche
 from subclases.bicicleta import Bicicleta
 from subsubclases.motocicleta import Motocicleta
 from subsubclases.camioneta import Camioneta
-from superclases import vehiculo
 from lanzador import lanzador_main
 
 # main.py
